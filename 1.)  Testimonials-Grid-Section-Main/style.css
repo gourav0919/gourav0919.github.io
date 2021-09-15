@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    /* font-size: 13px */
+    font-weight: 500;
+}
+
+.attribution{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+.container{
+    height: 90vh;
+    width: 80%;
+    /* margin: 10vh 5% 10vh 5%; */
+    padding: 5vh 0 0 0;
+    margin: auto;
+}
+
+.reviews{
+    /* height: 80%; */
+    /* width: 90%; */
+    /* margin: 10% 10% 10% 10%; */
+    /* margin: 10vh 10% 10vh 10%; */
+    /* padding: 5% 5% 5% 5%; */
+    padding: 5%;
+    display: grid;
+    gap: 20px 20px;
+    /* this Tells to grid that you have to make 3 columns and 2 rows */
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.item{
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* grid-row and grid columns are both the important to set one if you have to increase the specified grid item */
+
+/* This two properties takes two thing grid-row-start and grid-row-end which we termed as combine grid row 
+ same appl with grid column but change row to column */
+/* #item3{
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+} */
+#item5{
+    grid-row: 1 / 3;
+    grid-column: 4 / 5;
+    box-shadow: 2px 2px 5px 10px rgba(0, 0, 0, 0.2);
+}
+#item3{
+    box-shadow: 2px 2px 5px 10px rgba(0, 0, 0, 0.2);
+}
+#item1{
+    grid-column: 1 / 3;
+    background: url('images/bg-pattern-quotation.svg') no-repeat;
+    background-position: 85% 0%;
+    background-color: hsl(263, 55%, 52%);
+}
+#item4{
+    grid-column: 2 / 4;
+}
+
+
+
+
+
+/* Adding Responsiveness or Media Query for Mobile Devices*/
+@media only screen and (max-width: 800px ){
+    .container{
+        width: 100%;
+    }
+
+    .reviews{
+        padding: 15px 35px 0 35px;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: auto;
+        gap: 25px 0;
+        box-shadow: 0 0 0 0;
+    }
+
+    #item5{
+        grid-row: 5;
+        grid-column: 1;
+        box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    #item3{
+        box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    #item1{
+        grid-column: 1;
+    }
+
+    #item4{
+        grid-column: 1;
+    }
+
+    .item{
+        padding: 10px;
+    }
+
+    .attribution{
+        margin-top: 35px;
+        margin-bottom: 50px;
+    }
+
+}
+
+
+/* User Information CSS for Image, name and graduate CSS */
+.user{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.user img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user .info{
+    margin-left: 20px;
+}
+
+.info p{
+    opacity: 0.5;
+}
+
+.title{
+    font-weight: 600;
+}
+
+.description{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+
+
+
+
+/* Background Color Utility classes */
+.background-white{
+    background-color: hsl(0, 0%, 100%);
+}
+
+.background-violet{
+    background-color: hsl(263, 55%, 52%);
+}
+
+.background-grayish{
+    background-color: hsl(217, 19%, 35%);
+}
+
+.background-blackish{
+    background-color: hsl(219, 29%, 14%);
+}
+
+/* Color Utility Classes */
+.color-light-gray{
+    color: hsl(0, 0%, 81%);
+}
+
+.color-grayish-blue{
+    color: hsl(210, 46%, 95%);
+}
+
+.color-grayish{
+    color: hsl(217, 19%, 35%);
+}
