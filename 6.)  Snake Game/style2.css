@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting the Background image of snake */
+.snake-game{
+    height: 100vh;
+    background: url("img/bg.jpg") no-repeat;
+    background-size: 100vw 100vh;
+}
+
+/* setting the position of score in the website */
+.scores{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.scores h1{
+    font-size: 35px;
+}
+
+#game-area{
+    background: linear-gradient(rgb(170, 236, 170), rgb(236, 236, 167));
+    /* Why vmin because it takes minimum of width and height which we get by the viewport  */
+    width: 90vmin;
+    height: 90vmin;
+    border: 2px solid black;
+
+    /* Applying Grid to board which we use here */
+    display: grid;
+    /* fr stands for fraction and repeat for repeting the same things only work in grid */
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+
+    /* This will help in getting the centered div both vertically and horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.head{
+    background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+    border: 2px solid rgb(34, 4, 34);
+    transform: scale(1.02);
+    border-radius: 10px; 
+}
+
+.snake{   
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: purple;
+}
+
+.target{
+    border: 2px solid black;
+    border-radius: 10px;
+    background: linear-gradient(red, purple);
+}
+
+
