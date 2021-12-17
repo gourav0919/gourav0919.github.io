@@ -65,6 +65,7 @@ function gameOver(){
     // This will do the play the game sound again
     gameSound.currentTime = 0;
     // gameSound.play();
+    playSound = true;
 }
 
 function animation(ctime){
