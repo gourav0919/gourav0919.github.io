@@ -219,13 +219,19 @@ let highScore = gettingHighScore();
 changeHighScore();
 
 // running the game sound
-gameSound.play();
+// gameSound.play();
+let playSound = true;
 
 // Starting calling animations when the page is loaded in the window 
 window.requestAnimationFrame(animation);
 
 // Listening the user Keyboard Activities and changing the direction of x and y according to that in the inputDir object
 document.onkeydown = function(e){
+    if(playSound){
+        gameSound.play();
+        playSound = false;
+    }
+    
     // Going Down when any other key is pressed
     inputDir = {x : 0, y : 1};
 
