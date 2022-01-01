@@ -1,0 +1,410 @@
+.oswald-bold{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+.oswald-semibold{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+
+.montserrat-reg{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.oswald-reg{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+
+/* Landing Banner or Background image */
+
+#landing-banner{
+    width: 100%;
+    height: 100vh;
+    background: url("images/Banner.png");
+    background-size:cover;
+    background-position: center;
+}
+
+
+/* Navigation bar */
+#navbar{
+    background-color: #303030;
+    padding-left: 5%;
+    padding-right: 3%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#navbar ul{
+    position:absolute;
+    left: 35%;
+    top: 25%;
+}
+
+#navbar ul li{
+    margin-right: 20px;
+}
+
+#navbar i{
+    font-size: 24px;
+}
+
+#logo-img{
+    width: 100px;
+    height: 50px;
+}
+
+/* Responsive Navbar  */
+@media only screen and (max-width: 767px){
+    #navbar ul{
+        position: static;
+        text-align: center; 
+    }
+}
+
+
+
+
+/* Banner Title, Description, and register now button */
+
+#banner-script{
+    /* position: absolute;
+    left: 5%;
+    top: 40%; */
+    padding-top: 20vh;
+    padding-left: 5vw;
+    transition: all .3s;
+    /* If you give margin then its show the horizontal scroll bar */
+    /* margin-top: 10%;
+    margin-left: 5%; */
+}
+
+#banner-title{
+    font-size: 80px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    /* transform: scale(0.8, 1.8);
+    position: absolute;
+    left: 0; */
+}
+
+#banner-desc{
+    font-size: 20px;
+    /* letter-spacing: 1px; */
+}
+
+.banner-btn{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 40px;
+    border: 1px solid #e8631c;
+    background-color: #e8631c;
+}
+
+@media only screen and (max-width: 767px){
+    #banner-title{
+        font-size: 60px;
+        letter-spacing: 3px;
+    }
+
+    #banner-script{
+        padding-top: 20vh;
+    }
+
+    #banner-desc{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 575px){
+    #banner-title{
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+}
+
+
+/* Dance Tour */
+.orange-bg{
+    background-color: #e8631c;
+}
+
+.group-txt{
+    margin: 10px 0 20px 0;
+}
+
+.group-heading{
+    padding: 10px 0 0px 0;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.group-desc{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.tour-card{
+    margin: 0 15px 40px 15px;
+    /* background-color: #303030; */
+    padding-left: 0 !important;
+    padding-right: 0;
+}
+
+.card-text{
+    /* background-color: #303030; */
+    padding: 20px 10px 10px 10px;
+    /* padding: 20px 0 0 0; */
+}
+
+.card-desc{
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width: 767px){
+    .group-heading{
+        font-size: 30px;
+    }
+    
+    .group-desc{
+        font-size: 16px;
+    }
+}
+/* @media only screen and (max-width: 575px){
+    
+} */
+
+/* When you try to add background image as card */
+/* 
+.card-bg-img{
+    width: 100%;
+    height: 70%;
+    background-position: center;
+    background-size: cover;
+}
+
+#image1{
+    background-image: url(images/image-1.png);
+}
+
+#image2{
+    background-image: url(images/image\ 2.png);
+}
+
+#image3{
+    background-image: url(images/image\ 3.png);
+} */
+
+
+
+/* Pricing Section */
+.dark-bg{
+    background-color: #303030;
+}
+
+/* For making image centered and some padding */
+.price-icon{
+    padding: 50px 0 30px 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.price-btn{
+    margin: 20px 0 25px 0;
+    padding: 10px;
+}
+
+.same-mp{
+    margin: 0 20px;
+    padding: 0 20px;
+}
+
+@media only screen and (max-width: 767px){
+    .same-mp{
+        margin: 0 10px;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 1020px){
+    .same-mp{
+        margin: 0 15px;
+        padding: 0;
+    }
+}
+
+
+/* Amazing Dance Section and Best Dance */
+.amazing-dance-img{
+    padding-right: 0 !important;
+    padding-left: 0;
+    height: 100vh;
+}
+
+.amazing-dance-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.amazing-dance-script{
+    padding-top: 20vh;
+    padding-left: 5vw;
+    /* transition: all .3s; */
+}
+
+.amazing-dance-script p{
+    margin: 20px 0;
+}
+
+/* .amazing-dance-title{
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.amazing-dancer-desc{
+    font-size: 20px;
+} */
+
+/* .amazing-dance-btn{
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 10px 40px;
+    border: 1px solid #303030;
+} */
+/* 
+@media only screen and (max-width: 920px){
+    .amazing-dance-title{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .amazing-dance-title{
+        font-size: 27px;
+    }
+} */
+
+@media only screen and (max-width: 575px){
+    .amazing-dance-script{
+        padding-top: 5vh;
+        padding-left: 0;
+        padding-bottom: 5vh;
+        text-align: center;
+    }
+}
+
+
+/* Our Statistics Section  */
+
+.statistics{
+    padding: 25px 0;
+}
+
+.statistics-head{
+    margin: 50px 0;
+}
+
+.statistics-title{
+    font-size: 60px;
+    padding: 20px 0;
+    letter-spacing: 1px;
+}
+
+.statistics-desc{
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.statistics-data{
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 767px){
+    .statistics-desc{
+        font-size: 16px;
+    }
+    .statistics-title{
+        font-size: 30px;
+    }
+}
+
+
+/* Quote Section CSS */
+.quote-bg{
+    background-image: linear-gradient(rgba(232,99,28,0.3),rgba(232,99,28,0.3)), url(images/group-7-img.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.quote{
+    font-size: 35px;
+    letter-spacing: 1px;
+    padding: 30px 0;
+}
+
+@media only screen and (max-width: 767px){
+    .quote{
+        font-size: 20px;
+    }
+}
+
+
+/* Subscribe Us Section CSS */
+.subscribe-us-form{
+    padding: 40px 0 20px 0;
+}
+
+
+#email-box{
+    padding: 10px;
+    width: 50%;
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+#subscribe-btn{
+    padding: 10px 40px;
+    border: 1px solid #303030;
+    position: relative;
+    /* left: 5px; */
+    top: 5px;
+}
+
+@media only screen and (max-width: 575px){
+    #subscribe-btn{
+        padding: 10px 20px;
+    }
+}
+
+
+/* Footer Section CSS */
+.footer{
+    padding: 50px 0;
+}
+
+.footer-items-heading{
+    padding: 30px 0 10px 0;
+}
+
+.social-icons{
+    padding: 10px 0;
+}
+
+.social-icons a{
+    margin-right: 10px;
+}
+
+.social-icons a img{
+    width: 40px;
+}
+

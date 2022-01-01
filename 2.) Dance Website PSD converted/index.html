@@ -1,0 +1,359 @@
+<!-- See 100 Days of web development Notion File
+  URL - https://bit.ly/2VY47mU -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <!-- Oswald and Montserrat Font style  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      <!-- landing Banner  -->
+    <div id="landing-banner">
+      <!-- navbar  -->
+      <nav class="navbar navbar-expand-md navbar-dark" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="images/Logo.png" id="logo-img" alt="Logo Image"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-uppercase text-white oswald-reg active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase  text-white oswald-reg" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase  text-white oswald-reg" href="#">Promo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase  text-white oswald-reg" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase  text-white oswald-reg" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="text-white d-none d-md-block"
+            ><i class="bi bi-search"></i
+          ></a>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-auto text-white" id="banner-script">
+            <h1 id="banner-title" class="oswald-bold">Saloni Khan</h1>
+            <p id="banner-desc" class="montserrat-reg">
+              Lorem ipsum dolor sit amet consectetur<br />adipisicing elit. Fuga
+              magnam repellendus itaque<br />right then.
+            </p>
+            <button type="button" class="oswald-reg banner-btn">REGISTER NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content after First Scroll Down -->
+    <div class="container-fluid">
+
+      <!-- Dance Tour -->
+      <!-- Heading and Description -->
+      <div class="row orange-bg justify-content-center">
+      <div class="col-10 text-center text-white group-txt">
+          <h1 class="group-heading oswald-bold">DANCE TOUR</h1>
+          <p class="group-desc montserrat-reg">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Nihil sit deserunt blanditiis tempore atque.</p>
+        </div>
+    </div>
+    <!-- Cards or Places with dance images -->
+    <div class="row orange-bg justify-content-center cards-group">
+      <div class="col-sm-3 col-8 tour-card dark-bg">
+        <img src="images/image-1.png" alt="" class="img-fluid">
+        <div class="card-text text-white text-center">
+          <h3 class="card-heading oswald-reg">AMERICA</h3>
+          <p class="card-desc montserrat-reg">Lorem ipsum dolor sit amet<br> consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="col-sm-3 col-8 tour-card dark-bg">
+        <img src="images/image-2.png" alt="" class="img-fluid">
+        <div class="card-text text-white text-center">
+          <h3 class="card-heading oswald-reg">AUSTRALIA</h3>
+          <p class="card-desc montserrat-reg">Lorem ipsum dolor sit amet<br> consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="col-sm-3 col-8 tour-card dark-bg">
+        <img src="images/image-3.png" alt="" class="img-fluid">
+        <div class="card-text text-white text-center">
+          <h3 class="card-heading oswald-reg">ASIA</h3>
+          <p class="card-desc montserrat-reg">Lorem ipsum dolor sit amet<br> consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <!-- Heading and Description -->
+    <div class="row dark-bg justify-content-center">
+      <div class="col-10 text-center text-white group-txt">
+          <h1 class="group-heading oswald-bold">PRICING</h1>
+          <p class="group-desc montserrat-reg">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Nihil sit deserunt blanditiis tempore atque.</p>
+        </div>
+    </div>
+    <!-- Cards or Places with Pricing images -->
+    <div class="row dark-bg justify-content-center">
+      <div class="col-sm-3 col-8 orange-bg tour-card">
+        <img src="images/icon.png" alt="Award Icon" class="img-fluid price-icon">
+        <div class="card-text text-white">
+          <h3 class="card-heading oswald-semibold  text-center">BASIC</h3>
+          <div class="same-mp">
+          <p class="card-desc montserrat-reg text-center">Lorem ipsum dolor sit amet ikbal<br> consectetur adipisicing elit.</p>
+          <div class="price-btn dark-bg oswald-reg text-center">$150.00</div>
+        </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-8 orange-bg tour-card">
+        <img src="images/icon.png" alt="Award Icon" class="img-fluid price-icon">
+        <div class="card-text text-white text-center">
+          <h3 class="card-heading oswald-semibold">PROFESSIONAL</h3>
+          <div class="same-mp">
+          <p class="card-desc montserrat-reg">Lorem ipsum dolor sit amet ikbal<br> consectetur adipisicing elit.</p>
+          <div class="price-btn dark-bg oswald-reg">$200.00</div>
+        </div>
+        </div>
+      </div>
+      <div class="col-sm-3 col-8 orange-bg tour-card">
+        <img src="images/icon.png" alt="Award Icon" class="img-fluid price-icon">
+        <div class="card-text text-white text-center">
+          <h3 class="card-heading oswald-semibold">ULTIMATE</h3>
+          <div class="same-mp">
+          <p class="card-desc montserrat-reg">Lorem ipsum dolor sit amet ikbal<br> consectetur adipisicing elit.</p>
+          <div class="price-btn dark-bg oswald-reg">$250.00</div>
+        </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Amazing Dance Section -->
+    <div class="row">
+      <div class="col-6 amazing-dance-img d-none d-sm-block">
+        <img src="images/amazing-dance.png" alt="Amazing dance image">
+      </div>
+      <div class="col-sm-6 col-12 orange-bg amazing-dance-script text-white">
+        <h3 class="oswald-bold group-heading">AMAZING DANCE</h3>
+          <p class="montserrat-reg group-desc">Lorem ipsum dolor sit amet ikbal<br> consectetur adipisicing Lorem ipsum<br> sit amet consectetur adipisicing<br> elit. Suscipit, dolore.</p>
+          <button type="button" class="oswald-reg banner-btn dark-bg">READ MORE</button>
+      </div>
+      </div>
+
+  <!-- Best Dance Section -->
+    <!-- <div class="row orange-bg justify-content-center"> -->
+    <div class="row">
+      <!-- <div class="col-sm-6 col-8 orange-bg amazing-dance-script text-white justify-content-center"> -->
+      <div class="col-sm-6 col-12 orange-bg amazing-dance-script text-white">
+        <h3 class="oswald-bold group-heading">BEST DANCE</h3>
+          <p class="montserrat-reg group-desc">Lorem ipsum dolor sit amet ikbal<br> consectetur adipisicing Lorem ipsum<br> sit amet consectetur adipisicing<br> elit. Suscipit, dolore.</p>
+          <button type="button" class="oswald-reg banner-btn dark-bg">READ MORE</button>
+    </div>
+    <div class="col-6 amazing-dance-img d-none d-sm-block">
+      <img src="images/best-dance.png" alt="Amazing dance image">
+    </div>
+    </div>
+
+
+    <!-- Our Statistics Section -->
+    <div class="row justify-content-center dark-bg statistics">
+      <div class="col-sm-9 col-11 text-white text-center statistics-head">
+        <h1 class="statistics-title oswald-bold">OUR STATISTICS</h1>
+        <p class="statistics-desc montserrat-reg">Lorem ipsum dolor sit amet consectetur adipisicing elt.<br> Deserunt voluptates magni aliquid Lorem ipsum dolor sit amet.</p>
+      </div>
+
+      <div class="col-4 text-white statistics-data text-center">
+        <h1 class="oswald-bold">1240+</h1>
+        <p class="montserrat-reg">Club</p>
+      </div>
+      <div class="col-4 text-white statistics-data text-center">
+        <h1 class="oswald-bold">2000+</h1>
+        <p class="montserrat-reg">Active Members</p>
+      </div>
+      <div class="col-4 text-white statistics-data text-center">
+        <h1 class="oswald-bold">1000+</h1>
+        <p class="montserrat-reg">Community</p>
+      </div>
+    </div>
+
+    <!-- Quote Section -->
+      <div class="row quote-bg justify-content-center">
+        <div class="col-10 text-center text-white amazing-dance-script">
+          <p class="quote montserrat-reg">Lorem ipsum dolor sit amet consectetur adipisicing elt.<br> Deserunt voluptates magni aliquid Lorem ipsum<br> dolor sit amet.</p>
+      <h1 class="quote-author oswald-bold">JOHNSON WICK</h1>
+        </div>
+      </div>
+
+    
+    <!-- Subscribe Us Section  -->
+    <div class="row justify-content-center orange-bg statistics">
+      <div class="col-sm-8 col-11 text-white text-center statistics-head">
+        <h1 class="statistics-title oswald-bold">SUBSCRIBE</h1>
+        <p class="statistics-desc montserrat-reg">Lorem ipsum dolor sit amet consectetur adipisicing elt.<br> Deserunt voluptates magni aliquid Lorem ipsum dolor sit amet.</p>
+        <form action="#" class="subscribe-us-form">
+          <input type="email" id="email-box" placeholder="Your Email">
+          <button type="submit" id="subscribe-btn" class="dark-bg text-white text-center oswald-semibold">SUBSCRIBE</button>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <div class="row justify-content-center dark-bg text-white footer">
+      <!-- For Name and About us -->
+      <div class="col-sm-5 col-11">
+        <h3 class="oswald-reg footer-items-heading">MUSICOLOGY</h3>
+        <p class="montserrat-reg">Lorem ipsum dolor, sit amet consectetur adipisicing<br> elit. Fugit iste asperiores eum harum esse<br> cupiditate maiores, expedita temporibus et<br> quam quae dolor ab! Labore, inventore.</p>
+        <div class="social-icons">
+        <a href="#" class=""><img src="images/social-icons/Instagram.png" alt="instagram icon"></a>
+        <a href="#" class="montserrat-reg"><img src="images/social-icons/Facebook.png" alt="instagram icon"></a>
+        <a href="#"><img src="images/social-icons/Twitter.png" alt="instagram icon"></a>
+        <a href="#"><img src="images/social-icons/WhatsApp.png" alt="instagram icon"></a>
+      </div>
+      </div>
+
+      <div class="col-sm-6 col-11">
+        <div class="row justify-content-evenly">
+      <!-- About -->
+      <div class="col-4">
+        <h3 class="oswald-reg footer-items-heading">ABOUT</h3>
+          <div class="list">
+          <a href="#" class="text-decoration-none text-white"><p class="montserrat-reg">History</p></a>
+          <a href="#" class="text-decoration-none text-white"><p class="montserrat-reg">Our Teams</p></a>
+          <a href="#" class="text-decoration-none text-white"><p class="montserrat-reg">Brand Guidelines</p></a>
+          <a href="#" class="text-decoration-none text-white"><p class="montserrat-reg">Terms & Condition</p></a>
+          <a href="#" class="text-decoration-none text-white"><p class="montserrat-reg">Privacy Policy</p></a>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="col-4">
+        <h3 class="oswald-reg footer-items-heading">SERVICES</h3>
+          <div class="list">
+          <a href="#" class="text-decoration-none text-white"><p class="montserrat-reg">How to Order</p></a>
+          <a href="#" class="text-decoration-none text-white"><p class="montserrat-reg">Our Products</p></a>
+          <a href="#" class="text-decoration-none text-white"><p class="montserrat-reg">Order Status</p></a>
+          <a href="#" class="text-decoration-none text-white"><p class="montserrat-reg">Promo</p></a>
+          <a href="#" class="text-decoration-none text-white"><p class="montserrat-reg">Payment Method</p></a>
+        </div>
+      </div>
+
+      <!-- Others -->
+      <div class="col-sm-4 col-3">
+        <h3 class="oswald-reg footer-items-heading">OTHERS</h3>
+          <div class="list">
+          <a href="#" class="text-decoration-none text-white"><p class="montserrat-reg">Contact Us</p></a>
+          <a href="#" class="text-decoration-none text-white"><p class="montserrat-reg">Help</p></a>
+          <a href="#" class="text-decoration-none text-white"><p class="montserrat-reg">Privacy</p></a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+    <!-- Container End -->
+    </div>
+    
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Some js which is helpful -->
+    <script>
+      var myCollapsible = document.getElementById('navbarSupportedContent');
+      var bannerScript = document.getElementById('banner-script');
+
+      myCollapsible.addEventListener('show.bs.collapse', function () {
+        bannerScript.style.paddingTop = "5vh";
+      })
+      myCollapsible.addEventListener('hide.bs.collapse', function () {  
+        bannerScript.style.paddingTop = "20vh";
+      })
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+<!-- Navbar inside container-fluid but i am not able to make below collapse animation -->
+<!-- <div class="navibar">
+    <a href="#"><img src="images/Logo.png" id="logo-img" alt="Logo Image"></a>
+    <!-- <ul class="d-none d-sm-block"> -->
+<!-- <div class="collapse.show d-none d-sm-block" id="collapse-navbar"> 
+    <div class="collapse.show" id="collapse-navbar">
+    <!-- <div class="collapse" id="collapse-navbar"> 
+    <ul>
+        <li>
+        <a class="text-uppercase" aria-current="page" href="#">Home</a>
+        </li>
+        <li>
+        <a class="text-uppercase" href="#">Product</a>
+        </li>
+        <li>
+        <a class="text-uppercase" href="#">Promo</a>
+        </li>
+        <li>
+        <a class="text-uppercase" href="#">About</a>
+        </li>
+        <li>
+        <a class="text-uppercase" href="#">Contact</a>
+        </li>
+    </ul>
+</div>
+    <div class="icons">
+    <a href="#"><i class="bi bi-search text-white d-none d-sm-block"></i></a>
+    <a href="#collapse-navbar" data-bs-toggle="collapse" data-bs-target="#collapse-navbar" aria-expanded="false" aria-controls="collapse-navbar" aria-label="Toggle navigation"><i class="bi bi-list text-white d-block d-sm-none"></i></a>
+</div>
+</div> -->
